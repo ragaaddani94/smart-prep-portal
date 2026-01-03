@@ -50,64 +50,9 @@ async function fetchData(url) {
     }
 }
 
-function renderJobs(jobs) {
-    const container = document.getElementById('jobs-container');
-    if (!container || !jobs) return;
-
-    container.innerHTML = jobs.map(job => `
-        <div class="tip-item">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
-                <h4>${job.title}</h4>
-                <span style="font-size: 0.7rem; color: var(--text-muted);">${job.posted}</span>
-            </div>
-            <p><strong>${job.company}</strong> | ${job.location}</p>
-            <p style="font-size: 0.85rem; margin-top: 0.5rem; color: var(--text-muted);">${job.type}</p>
-            <a href="${job.link}" target="_blank" style="display: inline-block; margin-top: 1rem; color: var(--primary); font-weight: 600; text-decoration: none;">Apply Now →</a>
-        </div>
-    `).join('');
-
-    // Apply animations to new items
-    container.querySelectorAll('.tip-item').forEach(el => {
-        el.style.opacity = "0";
-        el.style.transform = "translateY(20px)";
-        el.style.transition = "opacity 0.6s ease-out, transform 0.6s ease-out";
-        observer.observe(el);
-    });
-}
-
-function renderTech(updates) {
-    const container = document.getElementById('tech-container');
-    if (!container || !updates) return;
-
-    container.innerHTML = updates.map(update => `
-        <div class="tip-item" style="border-left-color: var(--accent);">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
-                <h4>${update.title}</h4>
-                <span style="font-size: 0.7rem; color: var(--text-muted);">${update.date}</span>
-            </div>
-            <p>${update.description}</p>
-            <a href="${update.link}" target="_blank" style="display: inline-block; margin-top: 1rem; color: var(--accent); font-weight: 600; text-decoration: none;">Read More →</a>
-        </div>
-    `).join('');
-
-    // Apply animations to new items
-    container.querySelectorAll('.tip-item').forEach(el => {
-        el.style.opacity = "0";
-        el.style.transform = "translateY(20px)";
-        el.style.transition = "opacity 0.6s ease-out, transform 0.6s ease-out";
-        observer.observe(el);
-    });
-}
-
-// Initialize Dynamic Content
+// Initialize
 async function init() {
-    const [jobs, tech] = await Promise.all([
-        fetchData('jobs.json'),
-        fetchData('tech-updates.json')
-    ]);
-
-    if (jobs) renderJobs(jobs);
-    if (tech) renderTech(tech);
+    // Other initialization if needed
 }
 
 document.addEventListener('DOMContentLoaded', init);

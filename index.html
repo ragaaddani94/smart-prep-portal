@@ -22,12 +22,45 @@
         <nav>
             <a href="#" class="logo">PrepMaster</a>
             <div class="nav-links">
-                <a href="#jobs">Latest Jobs</a>
-                <a href="#tech">Tech Updates</a>
-                <a href="#interview">Interview Tips</a>
-                <a href="#resume">Resume Guide</a>
-                <a href="#bugs">Bug Fixes</a>
-                <a href="#guidance">Personal Guidance</a>
+                <a href="#home">Home</a>
+                <div class="dropdown">
+                    <a href="#services" class="dropbtn">Services <i class="fas fa-chevron-down"
+                            style="font-size: 0.7rem;"></i></a>
+                    <div class="mega-menu">
+                        <div class="mega-column" style="text-align: center;">
+                            <h4 class="column-title"><i class="fas fa-file-alt"></i></h4>
+                            <ul class="mega-links">
+                                <li><a href="#resume"
+                                        style="font-weight: 600; font-size: 1.1rem; color: var(--text-main) !important;">Resume
+                                        Guide</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-column" style="text-align: center;">
+                            <h4 class="column-title"><i class="fas fa-comments"></i></h4>
+                            <ul class="mega-links">
+                                <li><a href="#interview"
+                                        style="font-weight: 600; font-size: 1.1rem; color: var(--text-main) !important;">Interview
+                                        Tips</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-column" style="text-align: center;">
+                            <h4 class="column-title"><i class="fas fa-bug"></i></h4>
+                            <ul class="mega-links">
+                                <li><a href="#bugs"
+                                        style="font-weight: 600; font-size: 1.1rem; color: var(--text-main) !important;">Bug
+                                        Fixes</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-column" style="text-align: center;">
+                            <h4 class="column-title"><i class="fas fa-user-tie"></i></h4>
+                            <ul class="mega-links">
+                                <li><a href="#guidance"
+                                        style="font-weight: 600; font-size: 1.1rem; color: var(--text-main) !important;">Personal
+                                        Guidance</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 <a href="#about">About Us</a>
                 <a href="#contact">Contact</a>
             </div>
@@ -54,137 +87,8 @@
             </div>
         </header>
 
-        <section class="sections">
-            <div class="card">
-                <i class="fas fa-comments"></i>
-                <h3>Interview Mastery</h3>
-                <p>Master the art of storytelling and technical communication to ace your next big interview.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-file-alt"></i>
-                <h3>Resume Precision</h3>
-                <p>Build an ATS-optimized resume that highlights your achievements and catches every recruiter's eye.
-                </p>
-            </div>
-            <div class="card">
-                <i class="fas fa-bug"></i>
-                <h3>Bug Resolution</h3>
-                <p>Proven debugging workflows and common fixes for the most persistent development hurdles.</p>
-            </div>
-        </section>
 
-        <section id="interview" class="content-section">
-            <h2>Interview Tips</h2>
-            <div class="tips-grid">
-                <div class="tip-item">
-                    <h4>The STAR Method</h4>
-                    <p>Structure your behavioral answers using Situation, Task, Action, and Result for maximum impact.
-                    </p>
-                </div>
-                <div class="tip-item">
-                    <h4>Research the Company</h4>
-                    <p>Go beyond the home page. Understand their product, culture, and recent challenges.</p>
-                </div>
-                <div class="tip-item">
-                    <h4>Active Listening</h4>
-                    <p>Focus on understanding the interviewer's intent before jumping into an answer.</p>
-                </div>
-                <div class="tip-item">
-                    <h4>Reverse Interviewing</h4>
-                    <p>Have 3 thoughtful questions ready for the interviewer to show your deep interest.</p>
-                </div>
-            </div>
-        </section>
 
-        <section id="resume" class="content-section"
-            style="background: linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.9)), url('assets/resume-bg.jpg'); background-size: cover; background-position: center; border-radius: 40px; padding: 4rem;">
-            <h2>Resume Strategies</h2>
-            <div class="tips-grid">
-                <div class="tip-item">
-                    <h4>Quantify Results</h4>
-                    <p>Use numbers like "Increased revenue by 20%" instead of "Worked on sales".</p>
-                </div>
-                <div class="tip-item">
-                    <h4>Keyword Optimization</h4>
-                    <p>Align your skills with the job description to pass Applicant Tracking Systems.</p>
-                </div>
-                <div class="tip-item">
-                    <h4>Whitespace Matters</h4>
-                    <p>Keep your layout clean and readable. Less is often more when it comes to design.</p>
-                </div>
-                <div class="tip-item">
-                    <h4>One-Page Rule</h4>
-                    <p>Unless you have 10+ years of experience, stick to a concise single-page format.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="bugs" class="content-section">
-            <h2>Bug Fixing Workflows</h2>
-            <div class="tips-grid">
-                <div class="tip-item">
-                    <h4>Binary Search Debugging</h4>
-                    <p>Isolate issues by commenting out halves of your code to find the failing section.</p>
-                </div>
-                <div class="tip-item">
-                    <h4>Console & Logs</h4>
-                    <p>Master your browser's dev tools and server-side logging for real-time insights.</p>
-                </div>
-                <div class="tip-item">
-                    <h4>Rubber Ducking</h4>
-                    <p>Explain your code line-by-line to someone (or something) to find logical flaws.</p>
-                </div>
-                <div class="tip-item">
-                    <h4>Version Control</h4>
-                    <p>Use git bisect to identify exactly which commit introduced the regression.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="guidance" class="content-section"
-            style="background: rgba(255,255,255,0.01); border-radius: 40px; padding: 4rem;">
-            <h2>Personal Guidance</h2>
-            <div class="tips-grid">
-                <div class="tip-item" style="border-left-color: var(--secondary);">
-                    <h4>Career Roadmap</h4>
-                    <p>Tailored step-by-step guidance to help you navigate your unique career path and goals.</p>
-                </div>
-                <div class="tip-item" style="border-left-color: var(--secondary);">
-                    <h4>Mock Interviews</h4>
-                    <p>Realistic practice sessions with constructive feedback to build your confidence and clarity.</p>
-                </div>
-                <div class="tip-item" style="border-left-color: var(--secondary);">
-                    <h4>Salary Negotiation</h4>
-                    <p>Learn the strategies to effectively communicate your value and secure the best offer.</p>
-                </div>
-                <div class="tip-item" style="border-left-color: var(--secondary);">
-                    <h4>Skill Assessment</h4>
-                    <p>Identify your strengths and areas for growth with our expert-led technical evaluation.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="jobs" class="content-section">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
-                <h2>Latest Job Openings</h2>
-                <span class="badge"
-                    style="background: var(--primary); padding: 5px 15px; border-radius: 20px; font-size: 0.8rem;">Daily
-                    Updates</span>
-            </div>
-            <div id="jobs-container" class="tips-grid">
-                <!-- Jobs will be loaded here dynamically -->
-                <div class="loading">Loading jobs...</div>
-            </div>
-        </section>
-
-        <section id="tech" class="content-section"
-            style="background: rgba(99, 102, 241, 0.05); border-radius: 40px; padding: 4rem;">
-            <h2>Daily Tech Updates</h2>
-            <div id="tech-container" class="tips-grid">
-                <!-- Tech updates will be loaded here dynamically -->
-                <div class="loading">Loading news...</div>
-            </div>
-        </section>
 
         <section class="content-section" style="padding: 2rem 0; margin-top: -2rem;">
             <div style="display: flex; justify-content: center; gap: 4rem; flex-wrap: wrap;">
@@ -248,6 +152,7 @@
             <p>&copy; 2026 PrepMaster. Built with passion for developers and professionals.</p>
         </footer>
     </div>
+
 
     <script src="script.js"></script>
 </body>
