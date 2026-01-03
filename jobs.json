@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "title": "Frontend Developer",
+        "company": "Tech Solutions Inc.",
+        "location": "Remote",
+        "type": "Full-time",
+        "link": "https://example.com/jobs/1",
+        "posted": "2026-01-03"
+    },
+    {
+        "id": 2,
+        "title": "Python Backend Engineer",
+        "company": "DataFlow Systems",
+        "location": "Hyderbad, India",
+        "type": "Contract",
+        "link": "https://example.com/jobs/2",
+        "posted": "2026-01-03"
+    },
+    {
+        "id": 3,
+        "title": "UI/UX Designer",
+        "company": "Creative Agency",
+        "location": "Bangalore, India",
+        "type": "Full-time",
+        "link": "https://example.com/jobs/3",
+        "posted": "2026-01-02"
+    }
+]

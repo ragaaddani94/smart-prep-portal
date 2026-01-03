@@ -22,6 +22,8 @@
         <nav>
             <a href="#" class="logo">PrepMaster</a>
             <div class="nav-links">
+                <a href="#jobs">Latest Jobs</a>
+                <a href="#tech">Tech Updates</a>
                 <a href="#interview">Interview Tips</a>
                 <a href="#resume">Resume Guide</a>
                 <a href="#bugs">Bug Fixes</a>
@@ -159,6 +161,28 @@
                     <h4>Skill Assessment</h4>
                     <p>Identify your strengths and areas for growth with our expert-led technical evaluation.</p>
                 </div>
+            </div>
+        </section>
+
+        <section id="jobs" class="content-section">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+                <h2>Latest Job Openings</h2>
+                <span class="badge"
+                    style="background: var(--primary); padding: 5px 15px; border-radius: 20px; font-size: 0.8rem;">Daily
+                    Updates</span>
+            </div>
+            <div id="jobs-container" class="tips-grid">
+                <!-- Jobs will be loaded here dynamically -->
+                <div class="loading">Loading jobs...</div>
+            </div>
+        </section>
+
+        <section id="tech" class="content-section"
+            style="background: rgba(99, 102, 241, 0.05); border-radius: 40px; padding: 4rem;">
+            <h2>Daily Tech Updates</h2>
+            <div id="tech-container" class="tips-grid">
+                <!-- Tech updates will be loaded here dynamically -->
+                <div class="loading">Loading news...</div>
             </div>
         </section>
 
