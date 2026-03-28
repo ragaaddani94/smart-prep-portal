@@ -2,6 +2,20 @@
 
 This project is designed to be easily updated without needing a backend or a database. It's perfect for free hosting on **GitHub Pages**.
 
+## First-time publish to GitHub ([ragaaddani94](https://github.com/ragaaddani94))
+
+1. On GitHub, create a **new public repository** (no README/license if you use the commands below).
+2. In this folder, add the remote and push:
+
+   ```bash
+   git remote add origin https://github.com/ragaaddani94/YOUR_REPO_NAME.git
+   git push -u origin main
+   ```
+
+3. Enable **GitHub Pages**:
+   - Repo **Settings** → **Pages** → **Build and deployment** → **Source**: **GitHub Actions**.
+4. After the first push, open **Actions** and wait for **Deploy to GitHub Pages** to finish. The live URL will be `https://ragaaddani94.github.io/YOUR_REPO_NAME/`.
+
 ## How to Update Content
 
 The website reads data from two JSON files:
