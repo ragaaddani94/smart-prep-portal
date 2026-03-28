@@ -293,6 +293,105 @@ nav {
     color: var(--primary);
 }
 
+.pricing-price {
+    font-size: 2.25rem;
+    font-weight: 800;
+    font-family: var(--font-heading);
+    color: var(--text-main);
+    margin: 0.75rem 0 1rem;
+    line-height: 1.2;
+}
+
+.pricing-price span {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+.pricing-card {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.pricing-card h3 {
+    margin-bottom: 0.25rem;
+}
+
+.pricing-card--featured h3 {
+    padding-right: 5.5rem;
+}
+
+.pricing-card .pricing-tagline {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 1.25rem;
+    line-height: 1.5;
+}
+
+.pricing-card h4 {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 1.25rem 0 0.75rem;
+    color: var(--text-main);
+}
+
+.pricing-card h4:first-of-type {
+    margin-top: 0;
+}
+
+.pricing-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pricing-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.65rem;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.45;
+}
+
+.pricing-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.pricing-list--check li::before {
+    content: "✔";
+    color: var(--secondary);
+    font-size: 0.85rem;
+}
+
+.pricing-bonus {
+    margin-top: 1.25rem;
+    padding: 1rem 1.1rem;
+    border-radius: 16px;
+    background: rgba(236, 72, 153, 0.08);
+    border: 1px solid rgba(236, 72, 153, 0.25);
+}
+
+.pricing-bonus .pricing-list li::before {
+    content: "•";
+    color: var(--secondary);
+}
+
 .tips-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
